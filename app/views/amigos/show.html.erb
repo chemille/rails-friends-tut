@@ -1,0 +1,23 @@
+
+<div class="jumbotron">
+  <h1 class="display-5">
+    <%= @amigo.first_name %> 
+    <%= @amigo.last_name %>
+  </h1>
+  <hr class="my-4"> 
+  <p class="lead">
+    <%= @amigo.phone %>
+  </p>
+  <p class="lead">
+    <%= @amigo.email %>
+  </p>
+  <p class="lead">
+    <%= @amigo.twitter %>
+  </p>
+  <hr class="my-4"> 
+  <%= link_to "Edit", edit_amigo_path(@amigo), class:"btn btn-secondary" %> | 
+  <%= link_to "Back", amigos_path, class:"btn btn-dark" %> 
+  <br></br>
+  <%= button_to "Delete", @amigo, method: :delete, class:"btn btn-danger" %>
+</div>
+

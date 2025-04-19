@@ -1,0 +1,11 @@
+<% content_for :title, "New amigo" %>
+
+<h1>Add New Amigo</h1>
+<br>
+<%= render "form", amigo: @amigo %>
+
+<br>
+
+<div>
+  <%= link_to "Back", amigos_path, class:"btn btn-secondary" %>
+</div>
